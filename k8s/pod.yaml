@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pod-conversao-temperatura
+spec:
+  containers:
+    - image: tiagomendessilva/conversao-temperatura:v1
+      name: site
+      ports:
+        - containerPort: 8080
